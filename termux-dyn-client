@@ -11,7 +11,7 @@ printf  "$c1
  
 "
 if [ -z "$hostname" -o -z "$token" ]; then
-  echo "Usage: $0 -t authentication-token  your-name.dynv6.your-root-domain"
+  echo "Usage: $0 -t authentication-token  your-name.dynv6.your-domain"
   exit 1
 fi
 #address=$(ip -6 a | awk '/2409/' | sed '2!d' | cut -d/ -f1 | sed 's/inet6//'  | sed 's/ //g')
