@@ -1,9 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash -e
 token=$2
 hostname=$3
-blue='\033[1;34m'
-color='\033[1;32m'
-printf  "$blue
+c1='\033[1;34m'
+c2='\033[1;32m'
+printf  "$c1
 
  +-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ 
  |T|e|r|m|u|x| |d|y|n|v|6|-|u|p|d|a|t|e|-|c|l|i|e|n|t| 
@@ -11,7 +11,7 @@ printf  "$blue
  
 "
 if [ -z "$hostname" -o -z "$token" ]; then
-  echo "Usage: $0 -t your-authentication-token  your-name.dynv6.net"
+  echo "Usage: $0 -t authentication-token  HOSTNAME"
   exit 1
 fi
 #address=$(ip -6 a | awk '/2409/' | sed '2!d' | cut -d/ -f1 | sed 's/inet6//'  | sed 's/ //g')
@@ -20,7 +20,7 @@ fi
 
 #You can use any of above patterns to get addr. since interfaces of everyone's device is
 #differnt, we cannot write in a static approach. 
-printf "$color"
+printf "$c2"
 if [ -e /data/data/com.termux/files/usr/bin/curl ]; then
 
   address=$(curl --silent ifconfig.co)
