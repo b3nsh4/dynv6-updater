@@ -8,3 +8,4 @@ USAGE;
 `-t YOUR-TOKEN YOUR-HOSTNAME.ROOT `
 
 
+![demo run](https://raw.githubusercontent.com/bensh4/termux-dynv6-updater/master/test_run.jpg)
