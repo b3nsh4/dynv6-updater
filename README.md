@@ -3,7 +3,7 @@ available regex patterns to find your address more faster.
 Since interface change device by device, you have to try 3 patterns in the code and use 
 the working one. By default, 3rd pattern works perfectly most times.
 Again, if you prefer online lookup, its done by default.
-Give execute permission if needed; `chmod +x termux-dyn-client`
+Give execute permission if needed; `chmod +x dyn-client`
 
 USAGE;
 
