@@ -1,4 +1,4 @@
-A simple dyndns client made for Termux. You can make use of
+A simple dyndns client made for Termux, Linux (change bash/sh path). You can make use of
 available regex patterns to find your address more faster.
 Since interface change device by device, you have to try 3 patterns in the code and use 
 the working one. By default, 3rd pattern works perfectly most times.
