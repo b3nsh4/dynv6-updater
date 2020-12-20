@@ -34,7 +34,7 @@ if [ -z "$address" ]; then
 fi
 
 echo 
-$use "http://dynv6.com/api/update?hostname=$hostname&ipv6=$address&token=$token"
+curl "http://dynv6.com/api/update?hostname=$hostname&ipv6=$address&token=$token"
 echo 
 
 #WRITTEN BY bensh4
